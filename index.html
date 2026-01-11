@@ -63,7 +63,7 @@
         }
 
         #home {
-            background-color: #1a1a1a;
+            /* background-color: #1a1a1a; */
         }
 
         #about {
@@ -124,7 +124,38 @@
         .btn:hover::before {
             width: 160%;
         }
+    </style>
 
+    <style>
+        .bg {
+            animation:slide 3s ease-in-out infinite alternate;
+            background-image: linear-gradient(-60deg, #1a1a1a 50%, #7e3b4105 50%);
+            bottom:0;
+            left:-50%;
+            opacity:.5;
+            position:fixed;
+            right:-50%;
+            top:0;
+            z-index:-1;
+        }
+
+        .bg2 {
+            animation-direction:alternate-reverse;
+            animation-duration:4s;
+        }
+
+        .bg3 {
+            animation-duration:5s;
+        }
+
+        @keyframes slide {
+            0% {
+                transform:translateX(-25%);
+            }
+            100% {
+                transform:translateX(25%);
+            }
+        }
     </style>
 </head>
 <body>
@@ -143,6 +174,9 @@
             <p>I'm a full stack developer.</p>
             <button class="btn" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'});" style="margin: 1rem 0">View my portfolio</button>
         </div>
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
     </section>
 
     <section id="about">
