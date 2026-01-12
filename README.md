@@ -2,7 +2,7 @@
 
 This is the repository for my personal portfolio website, hosted on GitHub Pages. It showcases my experience as a Full Stack Developer, my technical skills, and the projects I've conquered.
 
-[View Live Portfolio](https://ashlerick.github.io/)
+[View Live Portfolio](https://ashlerick.github.io/ash.portfolio.github.io/)
 
 ## 🚀 Tech Stack
 
